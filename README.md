@@ -14,13 +14,13 @@ scratch](https://joshcollinsworth.com/blog/build-static-sveltekit-markdown-blog)
 To use, either clone...
 
 ```bash
-$ git clone https://github.com/notunrandom/notunseldom.git myblog
+git clone https://github.com/notunrandom/notunseldom.git my-blog
 ```
 
 ... or degit if you don't intend to modify:
 
 ```bash
-$ npx degit https://github.com/notunrandom/notunseldom.git my-blog
+npx degit https://github.com/notunrandom/notunseldom.git my-blog
 ```
 
 Then to try out locally, build and run:
@@ -37,20 +37,20 @@ To create a production version of your app:
 npm run build
 ```
 
-Deploy contents of somewhere (instructions coming soon for AWS).
+Deploy contents of ./build somewhere (instructions coming soon for AWS).
 
 ## How it was done
 
 Requires npm to be installed, e.g. on Arch Linux:
 
 ```bash
-$ sudo pacman -S npm
+sudo pacman -S npm
 ```
 
 Create a new SvelteKit project:
 
 ```bash
-$ npm create svelte@latest notunseldom
+npm create svelte@latest notunseldom
 ```
 
 Respond to questions with:
@@ -62,9 +62,9 @@ Respond to questions with:
 Build and test:
 
 ```bash
-$ cd notunseldom
-$ npm install
-$ npm run dev -- --open
+cd notunseldom
+npm install
+npm run dev -- --open
 ```
 
 This should open a browser tab with a page displaying "Welcome to SvelteKit".
@@ -72,7 +72,7 @@ This should open a browser tab with a page displaying "Welcome to SvelteKit".
 If using git, this is a good time to:
 
 ```bash
-$ git init
-$ git add -A
-$ git commit -m"Initial commit"
+git init
+git add -A
+git commit -m"Initial commit"
 ```
