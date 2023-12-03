@@ -98,3 +98,9 @@ More tools are needed to use [Sass](https://sass-lang.com/) and [Nord theme](htt
 npm install -D svelte-preprocess sass nord
 ```
 
+Then:
+
+- Modify svelte.config.js to perform Sass preprocessing.
+- Create a ./src/lib/styles directory with a style.sass file.
+- Import that Sass file in +layout.svelte.
+- Add Sass styling directory to Header.svelte and Footer.svelte components.
