@@ -41,6 +41,8 @@ Deploy contents of ./build somewhere (instructions coming soon for AWS).
 
 ## How it was done
 
+### Create SvelteKit skeleton
+
 Requires npm to be installed, e.g. on Arch Linux:
 
 ```bash
@@ -76,3 +78,13 @@ git init
 git add -A
 git commit -m"Initial commit"
 ```
+
+Create a basic layout with a header and a footer:
+
+- Root [layout](https://github.com/notunrandom/notunseldom/blob/73a696e3c9726193ca9478d14f5f328ad5dc1e90/src/routes/%2Blayout.svelte) Svelte applies to all pages.
+- Add a src/lib/components directory.
+- [Header](https://github.com/notunrandom/notunseldom/blob/73a696e3c9726193ca9478d14f5f328ad5dc1e90/src/lib/components/Header.svelte) component with basic navigation.
+- [Footer](https://github.com/notunrandom/notunseldom/blob/73a696e3c9726193ca9478d14f5f328ad5dc1e90/src/lib/components/Footer.svelte) component with minimal copyright notice.
+- [About](https://github.com/notunrandom/notunseldom/blob/73a696e3c9726193ca9478d14f5f328ad5dc1e90/src/routes/about/%2Bpage.svelte) page in src/routes/about directory.
+- [Contact](https://github.com/notunrandom/notunseldom/blob/73a696e3c9726193ca9478d14f5f328ad5dc1e90/src/routes/contact/%2Bpage.svelte) page in src/routes/contact directory.
+
