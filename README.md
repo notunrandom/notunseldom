@@ -5,7 +5,7 @@ Blog and home page static site generator, using
 [mdsvex](https://mdsvex.com/), Sass and [Nord
 theme](https://www.nordtheme.com/).
 
-Built from scratch with help and inspiration from Josh Collingworth's excellent
+Built from scratch with help and inspiration from Josh Collinsworth's excellent
 tutorial: [Let's learn SvelteKit by building a static Markdown blog from
 scratch](https://joshcollinsworth.com/blog/build-static-sveltekit-markdown-blog).
 
