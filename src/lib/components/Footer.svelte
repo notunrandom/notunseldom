@@ -1,3 +1,3 @@
 <footer>
-  <p>&copy; someone</p>
+	<p>&copy; someone</p>
 </footer>
