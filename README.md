@@ -88,3 +88,5 @@ Create a basic layout with a header and a footer:
 - [About](https://github.com/notunrandom/notunseldom/blob/73a696e3c9726193ca9478d14f5f328ad5dc1e90/src/routes/about/%2Bpage.svelte) page in src/routes/about directory.
 - [Contact](https://github.com/notunrandom/notunseldom/blob/73a696e3c9726193ca9478d14f5f328ad5dc1e90/src/routes/contact/%2Bpage.svelte) page in src/routes/contact directory.
 
+**Note**: the above permalinks to a specific commit of a file were obtained by viewing the file in the browser on GitHub, and pressing the Y key.
+
