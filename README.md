@@ -121,6 +121,6 @@ Then:
 
 Mdsvex comes with prism.js for code syntax highlighting, but this needs to be themed:
 
-- add a new partial [_prism.sass]() file in src/lib/styles
-- use the partial in the main [style.sass]() file
-- test with some code in a [+page.md]() file
+- add a new partial [_prism.sass](https://github.com/notunrandom/notunseldom/blob/a818b7e5fca3cfcd0330c9b59f34840bc9a0843e/src/lib/styles/_prism.sass) file in src/lib/styles
+- use the partial in the main [style.sass](https://github.com/notunrandom/notunseldom/blob/a818b7e5fca3cfcd0330c9b59f34840bc9a0843e/src/lib/styles/style.sass) file
+- test with some code in a [+page.md](https://github.com/notunrandom/notunseldom/blob/a818b7e5fca3cfcd0330c9b59f34840bc9a0843e/src/routes/colophon/%2Bpage.md) file
