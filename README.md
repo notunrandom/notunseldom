@@ -116,5 +116,5 @@ npm install -D mdsvex
 
 Then:
 
-- add markdown preprocessing to svelte.config.js
-- make new +page.md in routing directory instead of +page.svelte
+- add markdown preprocessing to [svelte.config.js](https://github.com/notunrandom/notunseldom/blob/4fe969e717914dc743c53bb4f2e5ce146e5a7298/svelte.config.js)
+- make new [+page.md](https://github.com/notunrandom/notunseldom/blob/4fe969e717914dc743c53bb4f2e5ce146e5a7298/src/routes/colophon/%2Bpage.md) in routing directory instead of +page.svelte
