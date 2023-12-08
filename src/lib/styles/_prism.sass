@@ -1,0 +1,106 @@
+/**
+ * Nord Theme Originally by Arctic Ice Studio
+ * https://nordtheme.com
+ *
+ * Ported for PrismJS by Zane Hitchcoxc (@zwhitchcox) and Gabriel Ramos (@gabrieluizramos)
+ *
+ * Adapted to Sass by @notunrandom
+ */
+
+@import 'nord/src/sass/nord.scss'
+
+code[class*="language-"],
+pre[class*="language-"]
+  color: #{$nord6}
+  background: none
+  text-shadow: 0 1px rgba(0, 0, 0, 0.3)
+  text-align: left
+  white-space: pre
+  word-spacing: normal
+  word-break: normal
+  word-wrap: normal
+  line-height: 1.5
+  -moz-tab-size: 4
+  -o-tab-size: 4
+  tab-size: 4
+  -webkit-hyphens: none
+  -moz-hyphens: none
+  -ms-hyphens: none
+  hyphens: none
+
+pre[class*="language-"]
+  padding: 1em
+  margin: 2rem 0
+  overflow: auto
+  border-radius: 0.3em
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"]
+  background: #{nord0}
+
+:not(pre) > code[class*="language-"]
+  padding: .1em
+  border-radius: .3em
+  white-space: normal
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata
+  color: #{$nord7}
+
+.token.punctuation
+  color: #{$nord9}
+
+.namespace
+  opacity: .7
+
+.token.property,
+.token.tag,
+.token.constant,
+.token.symbol,
+.token.deleted
+  color: #{$nord9}
+
+.token.boolean,
+.token.number
+  color: #{$nord15}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted
+  color: #{$nord14}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string,
+.token.variable
+  color: #{$nord9}
+
+.token.atrule,
+.token.attr-value,
+.token.function,
+.token.class-name
+  color: #{$nord7}
+
+.token.keyword
+  color: #{$nord9}
+
+.token.regex,
+.token.important
+  color: #{$nord13}
+
+.token.important,
+.token.bold
+  font-weight: bold
+
+.token.italic
+  font-style: italic
+
+.token.entity
+  cursor: help

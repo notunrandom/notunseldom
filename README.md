@@ -118,3 +118,9 @@ Then:
 
 - add markdown preprocessing to [svelte.config.js](https://github.com/notunrandom/notunseldom/blob/4fe969e717914dc743c53bb4f2e5ce146e5a7298/svelte.config.js)
 - make new [+page.md](https://github.com/notunrandom/notunseldom/blob/4fe969e717914dc743c53bb4f2e5ce146e5a7298/src/routes/colophon/%2Bpage.md) in routing directory instead of +page.svelte
+
+Mdsvex comes with prism.js for code syntax highlighting, but this needs to be themed:
+
+- add a new partial [_prism.sass]() file in src/lib/styles
+- use the partial in the main [style.sass]() file
+- test with some code in a [+page.md]() file
