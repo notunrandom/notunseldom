@@ -105,3 +105,16 @@ Then:
 - Import that Sass file in [+layout.svelte](https://github.com/notunrandom/notunseldom/blob/6b7dd9b26c6ff1edbe8f463602eb1bd83da12c0c/src/routes/%2Blayout.svelte).
 - Add Sass styling directly to [Header.svelte](https://github.com/notunrandom/notunseldom/blob/6b7dd9b26c6ff1edbe8f463602eb1bd83da12c0c/src/lib/components/Header.svelte) and [Footer.svelte](https://github.com/notunrandom/notunseldom/blob/6b7dd9b26c6ff1edbe8f463602eb1bd83da12c0c/src/lib/components/Footer.svelte) components.
 - Add googlefont to [app.html](https://github.com/notunrandom/notunseldom/blob/6b7dd9b26c6ff1edbe8f463602eb1bd83da12c0c/src/app.html).
+
+### Markdown
+
+First install mdsvex:
+
+```bash
+npm install -D mdsvex
+```
+
+Then:
+
+- add markdown preprocessing to svelte.config.js
+- make new +page.md in routing directory instead of +page.svelte
