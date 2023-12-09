@@ -31,6 +31,8 @@ npm install
 npm run dev -- --open
 ```
 
+To adapt to your needs, modify/add *.md files in src/routes.
+
 To create a production version of your app:
 
 ```bash
