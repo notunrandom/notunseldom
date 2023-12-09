@@ -131,6 +131,6 @@ Using dynamic routing:
 
 - create a src/routes/blog subdirectory
 - create a src/routes/blog/[slug] subdirectory
-- in latter, create a [+page.js](https://github.com/notunrandom/notunseldom/blob/20cef8f6841bc619ba36668c4df1855ca3059b42/src/routes/blog/%5Bslug%5D/%2Bpage.js) file step 1 of the routing
-- also create a [+page.svelte](https://github.com/notunrandom/notunseldom/blob/20cef8f6841bc619ba36668c4df1855ca3059b42/src/routes/blog/%5Bslug%5D/%2Bpage.js) for step 2 (rendering)
+- in latter, create a [+page.js](https://github.com/notunrandom/notunseldom/blob/fdc5c9e7ebdf88786cef01a172c5b4fc981e268e/src/routes/blog/%5Bslug%5D/%2Bpage.js) file step 1 of the routing
+- also create a [+page.svelte](https://github.com/notunrandom/notunseldom/blob/fdc5c9e7ebdf88786cef01a172c5b4fc981e268e/src/routes/blog/%5Bslug%5D/%2Bpage.svelte) for step 2 (rendering)
 - add example blog pages *.md in src/routes/blog.
