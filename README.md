@@ -124,3 +124,13 @@ Mdsvex comes with prism.js for code syntax highlighting, but this needs to be th
 - add a new partial [_prism.sass](https://github.com/notunrandom/notunseldom/blob/a818b7e5fca3cfcd0330c9b59f34840bc9a0843e/src/lib/styles/_prism.sass) file in src/lib/styles
 - use the partial in the main [style.sass](https://github.com/notunrandom/notunseldom/blob/a818b7e5fca3cfcd0330c9b59f34840bc9a0843e/src/lib/styles/style.sass) file
 - test with some code in a [+page.md](https://github.com/notunrandom/notunseldom/blob/a818b7e5fca3cfcd0330c9b59f34840bc9a0843e/src/routes/colophon/%2Bpage.md) file
+
+### Blog
+
+Using dynamic routing:
+
+- create a src/routes/blog subdirectory
+- create a src/routes/blog/[slug] subdirectory
+- in latter, create a +page.js file step 1 of the routing
+- also create a +page.svelte for step 2 (rendering)
+- add example blog pages *.md in src/routes/blog.
