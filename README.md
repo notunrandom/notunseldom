@@ -31,7 +31,7 @@ npm install
 npm run dev -- --open
 ```
 
-To adapt to your needs, modify/add *.md files in src/routes.
+To adapt to your needs, modify/add \*.md files in src/routes.
 
 To create a production version of your app:
 
@@ -123,7 +123,7 @@ Then:
 
 Mdsvex comes with prism.js for code syntax highlighting, but this needs to be themed:
 
-- add a new partial [_prism.sass](https://github.com/notunrandom/notunseldom/blob/a818b7e5fca3cfcd0330c9b59f34840bc9a0843e/src/lib/styles/_prism.sass) file in src/lib/styles
+- add a new partial [\_prism.sass](https://github.com/notunrandom/notunseldom/blob/a818b7e5fca3cfcd0330c9b59f34840bc9a0843e/src/lib/styles/_prism.sass) file in src/lib/styles
 - use the partial in the main [style.sass](https://github.com/notunrandom/notunseldom/blob/a818b7e5fca3cfcd0330c9b59f34840bc9a0843e/src/lib/styles/style.sass) file
 - test with some code in a [+page.md](https://github.com/notunrandom/notunseldom/blob/a818b7e5fca3cfcd0330c9b59f34840bc9a0843e/src/routes/colophon/%2Bpage.md) file
 
@@ -135,4 +135,20 @@ Using dynamic routing:
 - create a src/routes/blog/[slug] subdirectory
 - in latter, create a [+page.js](https://github.com/notunrandom/notunseldom/blob/fdc5c9e7ebdf88786cef01a172c5b4fc981e268e/src/routes/blog/%5Bslug%5D/%2Bpage.js) file step 1 of the routing
 - also create a [+page.svelte](https://github.com/notunrandom/notunseldom/blob/fdc5c9e7ebdf88786cef01a172c5b4fc981e268e/src/routes/blog/%5Bslug%5D/%2Bpage.svelte) for step 2 (rendering)
-- add example blog pages *.md in src/routes/blog.
+- add example blog pages \*.md in src/routes/blog.
+
+This is enough to access individual posts by entering their address.
+
+Creating a server route (API endpoint) is a convenient approach towards building an index of blogs.
+
+- create a src/routes/api/posts directory
+- in it, create a +server.js server route file
+- create a src/lib/utils directory
+- in it, create a index.js script that provides a list of blog entries
+
+The API endpoint /api/posts now works. All that is left is using it to build the index page...
+
+- preload the list of posts with a +page.js in src/routes/blog
+- render it with the +page.svelte in src/routes/blog
+
+... and adding a menu item for the blog index (in the Header.svelte component).
