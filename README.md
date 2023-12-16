@@ -142,13 +142,13 @@ This is enough to access individual posts by entering their address.
 Creating a server route (API endpoint) is a convenient approach towards building an index of blogs.
 
 - create a src/routes/api/posts directory
-- in it, create a +server.js server route file
+- in it, create a [+server.js](https://github.com/notunrandom/notunseldom/blob/cab1ff200213e481ed74633c90d94fa881cdbc89/src/routes/api/posts/%2Bserver.js) server route file
 - create a src/lib/utils directory
-- in it, create a index.js script that provides a list of blog entries
+- in it, create a [index.js](https://github.com/notunrandom/notunseldom/blob/cab1ff200213e481ed74633c90d94fa881cdbc89/src/lib/utils/index.js) script that provides a list of blog entries
 
 The API endpoint /api/posts now works. All that is left is using it to build the index page...
 
-- preload the list of posts with a +page.js in src/routes/blog
-- render it with the +page.svelte in src/routes/blog
+- preload the list of posts with a [+page.js](https://github.com/notunrandom/notunseldom/blob/cab1ff200213e481ed74633c90d94fa881cdbc89/src/routes/blog/%2Bpage.js) in src/routes/blog
+- render it with the [+page.svelte](https://github.com/notunrandom/notunseldom/blob/cab1ff200213e481ed74633c90d94fa881cdbc89/src/routes/blog/%2Bpage.svelte) in src/routes/blog
 
-... and adding a menu item for the blog index (in the Header.svelte component).
+... and adding a menu item for the blog index (in the [Header.svelte](https://github.com/notunrandom/notunseldom/blob/cab1ff200213e481ed74633c90d94fa881cdbc89/src/lib/components/Header.svelte) component).
