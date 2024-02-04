@@ -161,9 +161,9 @@ To use SvelteKit as a static site generator (SSG), first install the appropriate
 npm install -D @sveltejs/adapter-static 
 ```
 
-Then, inside svelte.config.js, change adapter-auto to adapter-static (in the import near the top of the file).
+Then, inside [svelte.config.js](https://github.com/notunrandom/notunseldom/blob/6b6d2ad8897b88f04fe95cbe62c3499605b5f2e0/svelte.config.js), change adapter-auto to adapter-static (in the import near the top of the file).
 
-Finally, create a new src/route/+layout.js file to set the prerender prop for every page:
+Finally, create a new [src/route/+layout.js](https://github.com/notunrandom/notunseldom/blob/6b6d2ad8897b88f04fe95cbe62c3499605b5f2e0/src/routes/%2Blayout.js) file to set the prerender prop for every page:
 
 ```javascript
 export const prerender = true;
