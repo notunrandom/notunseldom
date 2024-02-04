@@ -152,3 +152,20 @@ The API endpoint /api/posts now works. All that is left is using it to build the
 - render it with the [+page.svelte](https://github.com/notunrandom/notunseldom/blob/cab1ff200213e481ed74633c90d94fa881cdbc89/src/routes/blog/%2Bpage.svelte) in src/routes/blog
 
 ... and adding a menu item for the blog index (in the [Header.svelte](https://github.com/notunrandom/notunseldom/blob/cab1ff200213e481ed74633c90d94fa881cdbc89/src/lib/components/Header.svelte) component).
+
+### Static site generation
+
+To use SvelteKit as a static site generator (SSG), first install the appropriate adapter:
+
+```bash
+npm install -D @sveltejs/adapter-static 
+```
+
+Then, inside svelte.config.js, change adapter-auto to adapter-static (in the import near the top of the file).
+
+Finally, create a new src/route/+layout.js file to set the prerender prop for every page:
+
+```javascript
+export const prerender = true;
+```
+
